@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <title>Gallery - Samruddhi Convention</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
   <style>
     .gallery {
       display: flex;
@@ -13,7 +17,7 @@
       padding: 20px;
     }
 
-    .gallery img {
+    .gallery a img {
       width: 300px;
       height: auto;
       object-fit: cover;
@@ -22,7 +26,7 @@
       transition: transform 0.2s;
     }
 
-    .gallery img:hover {
+    .gallery a img:hover {
       transform: scale(1.03);
     }
   </style>
@@ -43,38 +47,41 @@
   <section>
     <h2>Venue Highlights</h2>
     <div class="gallery">
-  <a href="hall-view.jpeg" target="_blank">
-    <img src="hall-view.jpeg" alt="Main Hall View" />
-  </a>
-  <a href="victorian-garden.jpg" target="_blank">
-    <img src="victorian-garden.jpg" alt="Victorian Garden" />
-  </a>
-  <a href="spring-venue.jpg" target="_blank">
-    <img src="spring-venue.jpg" alt="Spring Wedding Venue" />
-  </a>
-  <a href="celebration-scene.jpeg" target="_blank">
-    <img src="celebration-scene.jpeg" alt="Celebration Setup" />
-  </a>
-  <a href="e1578831ed3999f6607cec26e9dbf2e1.jpg" target="_blank">
-    <img src="e1578831ed3999f6607cec26e9dbf2e1.jpg" alt="Reception Decoration" />
-  </a>
-  <a href="https://source.unsplash.com/400x300/?wedding,venue" target="_blank">
-    <img src="https://source.unsplash.com/400x300/?wedding,venue" alt="Wedding Venue 1" />
-  </a>
-  <a href="https://source.unsplash.com/400x300/?wedding,reception" target="_blank">
-    <img src="https://source.unsplash.com/400x300/?wedding,reception" alt="Wedding Reception" />
-  </a>
-  <a href="https://source.unsplash.com/400x300/?wedding,decor" target="_blank">
-    <img src="https://source.unsplash.com/400x300/?wedding,decor" alt="Decor Example" />
-  </a>
-  <a href="https://source.unsplash.com/400x300/?wedding,lights" target="_blank">
-    <img src="https://source.unsplash.com/400x300/?wedding,lights" alt="Lighting Setup" />
-  </a>
-</div>
+      <a href="hall-view.jpeg" data-lightbox="venue-gallery" data-title="Main Hall View">
+        <img src="hall-view.jpeg" alt="Main Hall View" />
+      </a>
+      <a href="victorian-garden.jpg" data-lightbox="venue-gallery" data-title="Victorian Garden">
+        <img src="victorian-garden.jpg" alt="Victorian Garden" />
+      </a>
+      <a href="spring-venue.jpg" data-lightbox="venue-gallery" data-title="Spring Wedding Venue">
+        <img src="spring-venue.jpg" alt="Spring Wedding Venue" />
+      </a>
+      <a href="celebration-scene.jpeg" data-lightbox="venue-gallery" data-title="Celebration Scene">
+        <img src="celebration-scene.jpeg" alt="Celebration Scene" />
+      </a>
+      <a href="e1578831ed3999f6607cec26e9dbf2e1.jpg" data-lightbox="venue-gallery" data-title="Reception Decoration">
+        <img src="e1578831ed3999f6607cec26e9dbf2e1.jpg" alt="Reception Decoration" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?wedding,venue" data-lightbox="venue-gallery" data-title="Wedding Venue 1">
+        <img src="https://source.unsplash.com/400x300/?wedding,venue" alt="Wedding Venue 1" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?wedding,reception" data-lightbox="venue-gallery" data-title="Wedding Reception">
+        <img src="https://source.unsplash.com/400x300/?wedding,reception" alt="Wedding Reception" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?wedding,decor" data-lightbox="venue-gallery" data-title="Decor Example">
+        <img src="https://source.unsplash.com/400x300/?wedding,decor" alt="Decor Example" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?wedding,lights" data-lightbox="venue-gallery" data-title="Lighting Setup">
+        <img src="https://source.unsplash.com/400x300/?wedding,lights" alt="Lighting Setup" />
+      </a>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Samruddhi Convention</p>
   </footer>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
