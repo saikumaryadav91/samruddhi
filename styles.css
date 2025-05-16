@@ -1,0 +1,52 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: #fff9f5;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #a6794d;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fdf6f0;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f5f0eb;
+  margin-top: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+  display: inline-block;
+}
