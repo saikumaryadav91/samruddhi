@@ -2,30 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Samruddhi Convention - Wedding Venue</title>
+  <title>Samruddhi Convention</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background: url('https://raw.githubusercontent.com/saikumaryadav91/samruddhi/main/pictures/image_11.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-size: 1.5em;
+      max-width: 700px;
+      line-height: 1.5;
+      font-style: italic;
+      color: #f0e6ff;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Samruddhi Convention</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="packages.html">Packages</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <div class="overlay"></div>
 
-  <section class="hero">
-    <h2>Elegant Weddings in Hyderabad</h2>
-    <p>Where dreams come true at Samruddhi Convention.</p>
-  </section>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="packages.html">Packages</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <footer>
-    <p>&copy; 2025 Samruddhi Convention. All rights reserved.</p>
-  </footer>
+  <div class="content">
+    <h1>Welcome to Samruddhi Convention</h1>
+    <p class="quote">“A successful marriage requires falling in love many times, always with the same person.” – Mignon McLaughlin</p>
+  </div>
 </body>
 </html>
