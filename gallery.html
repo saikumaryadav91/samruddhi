@@ -4,6 +4,28 @@
   <meta charset="UTF-8" />
   <title>Gallery - Samruddhi Convention</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
 </head>
 <body>
   <header>
